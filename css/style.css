@@ -1,0 +1,8 @@
+li {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+ul {
+  padding-left: 0;
+}
