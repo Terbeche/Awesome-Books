@@ -5,17 +5,28 @@ const authorInput = bookForm.author;
 const books = JSON.parse(localStorage.getItem('books')) || [];
 
 class AwesomeBooks {
-  addBook(title, author) {
+  // constructor() {
+  //   this.addBook = this.addBook.bind(this);
+  //   this.createBookElement = this.createBookElement.bind(this);
+  // }
+
+  addBook = (title, author) => {
     books.push({
       title,
       author,
     });
 
     localStorage.setItem('books', JSON.stringify(books));
-    return { title, author };
+    return {
+      title,
+      author,
+    };
   }
 
-  createBookElement({ title, author }) {
+  createBookElement = ({
+    title,
+    author,
+  }) => {
     // Create elements
 
     const bookDiv = document.createElement('div');

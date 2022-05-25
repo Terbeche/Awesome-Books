@@ -1,8 +1,10 @@
-*, ::before, ::after{
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
-body{
+body {
   text-align: center;
 }
 
@@ -15,9 +17,7 @@ ul {
   padding-left: 0;
 }
 
-
-
-#books{
+#books {
   border: 2px solid black;
   border-radius: 7px;
   width: 80%;
@@ -25,7 +25,7 @@ ul {
   padding: 1rem;
 }
 
-.rule{
+.rule {
   width: 20%;
   margin: 1.5rem auto;
   height: 5px;
@@ -33,48 +33,46 @@ ul {
   border-radius: 7px;
 }
 
-.book-div{
+.book-div {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 0;
 }
 
-.book-remove{
+.book-remove {
   padding: 5px;
- align-self: center;
+  align-self: center;
 }
 
-#input-fields{
- display: flex;
- flex-direction: column;
- align-items: center;;
- margin:auto;
-}
-
-#bookForm{
-  width: fit-content;
+#input-fields {
   display: flex;
   flex-direction: column;
-  width: 65%
+  align-items: center;
+  margin: auto;
 }
 
-input{
+#bookForm {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+input {
   padding: 0.5rem;
   width: 100%;
   margin: 0.5rem 0;
 }
 
-.add-button{
- padding: 0.5rem;
- width: fit-content;
- margin-left: auto;
+.add-button {
+  padding: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
-  #bookForm{
-    width: fit-content;
+@media only screen and (min-width: 768px) {
+  #bookForm {
     display: flex;
     flex-direction: column;
-    width: 55%
+    width: 55%;
   }
 }
