@@ -1,3 +1,13 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
 li {
   list-style-type: none;
   margin: 1rem 0;
@@ -5,4 +15,64 @@ li {
 
 ul {
   padding-left: 0;
+}
+
+#books {
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.rule {
+  width: 20%;
+  margin: 1.5rem auto;
+  height: 5px;
+  background-color: black;
+  border-radius: 7px;
+}
+
+.book-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.book-remove {
+  padding: 5px;
+  align-self: center;
+}
+
+#input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+#bookForm {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+input {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.add-button {
+  padding: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  #bookForm {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+  }
 }
