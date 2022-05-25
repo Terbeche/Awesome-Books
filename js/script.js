@@ -5,11 +5,7 @@ const authorInput = bookForm.author;
 const books = JSON.parse(localStorage.getItem('books')) || [];
 
 class AwesomeBooks {
-  constructor() {
-
-  }
-
-  addBook(title, author){
+  addBook(title, author) {
     books.push({
       title,
       author,
@@ -17,21 +13,20 @@ class AwesomeBooks {
 
     localStorage.setItem('books', JSON.stringify(books));
     return { title, author };
-  };
+  }
 
-  createBookElement({ title, author }){
+  createBookElement({ title, author }) {
     // Create elements
 
     const bookDiv = document.createElement('div');
-    const bookTitle = document.createElement('h2');
-    const bookAuthor = document.createElement('h3');
+    bookDiv.classList.add('book-div');
+    const bookOutput = document.createElement('p');
     const bookRemove = document.createElement('button');
-    const bookHr = document.createElement('hr');
+    bookRemove.classList.add('book-remove');
 
     // Fill the content
-    bookTitle.innerText = `Book title: ${title}`;
-    bookAuthor.innerText = `Book author: ${author}`;
     bookRemove.innerText = 'Remove';
+    bookOutput.innerHTML = `"${title}" by ${author}`;
 
     bookRemove.onclick = function () {
       bookRemove.parentElement.remove();
@@ -46,15 +41,12 @@ class AwesomeBooks {
     };
 
     // Add to the DOM
-    bookDiv.append(bookTitle, bookAuthor, bookRemove, bookHr);
+    bookDiv.append(bookOutput, bookRemove);
     booksContainer.appendChild(bookDiv);
-  };
-
+  }
 }
 
-
 const myBooks = new AwesomeBooks();
-
 
 books.forEach(myBooks.createBookElement);
 

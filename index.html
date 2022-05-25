@@ -9,26 +9,24 @@
   </head>
   <body>
     <main>
-      <h1>Awesome books</h1>
-      <div class="books"></div>
-      <form id="bookForm">
-        <ul>
-          <li>
+      <div id="headline">
+        <h1>All Awesome Books</h1>
+      </div>
+
+      <!-- displayed books -->
+      <div id="books">
+        <div class="books"></div>
+      </div>
+      <hr class="rule" />
+      <!-- input fields -->
+      <div id="input-fields">
+        <h2 class="input-header">Add New Book</h2>
+        <form id="bookForm">
             <input type="text" placeholder="Book title" name="title" required />
-          </li>
-          <li>
-            <input
-              type="text"
-              placeholder="Book author"
-              name="author"
-              required
-            />
-          </li>
-          <li>
-            <button type="submit">Add book</button>
-          </li>
-        </ul>
-      </form>
+            <input type="text" placeholder="Book author" name="author" required/>
+              <button class="add-button" type="submit">Add book</button>
+        </form>
+      </div>
     </main>
     <script src="./js/script.js"></script>
   </body>
