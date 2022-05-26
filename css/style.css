@@ -23,6 +23,16 @@ padding: 1rem 1rem;
 border: none;
 }
 
+#time-container{
+  width: 80%;
+  border: none;
+  margin: auto;
+}
+#time {
+text-align: right;
+
+}
+
 .bordered{
   border-right: none;
 }
@@ -37,14 +47,6 @@ border: none;
   width: 80%;
   margin: 0 auto;
   padding: 1rem;
-}
-
-.rule {
-  width: 20%;
-  margin: 1.5rem auto;
-  height: 5px;
-  background-color: black;
-  border-radius: 7px;
 }
 
 .book-div {
@@ -81,6 +83,16 @@ input {
   padding: 0.5rem;
   width: fit-content;
   margin-left: auto;
+}
+
+footer{
+  width: 80%;
+  padding: 1rem 1rem;
+  border: solid 2px black;
+}
+
+.contact-list {
+  line-height: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
