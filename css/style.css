@@ -17,6 +17,36 @@ ul {
   padding-left: 0;
 }
 
+.navbar {
+  width: 80%;
+  padding: 1rem 1rem;
+  border: none;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  background: white;
+}
+
+#time-container {
+  width: 80%;
+  border: none;
+  margin: auto;
+}
+
+#time {
+  text-align: right;
+}
+
+.bordered {
+  border-right: none;
+}
+
+.navbar-brand {
+  font-size: 16px;
+}
+
 #books {
   border: 2px solid black;
   border-radius: 7px;
@@ -25,12 +55,8 @@ ul {
   padding: 1rem;
 }
 
-.rule {
-  width: 20%;
-  margin: 1.5rem auto;
-  height: 5px;
-  background-color: black;
-  border-radius: 7px;
+#books-list {
+  margin-top: 150px;
 }
 
 .book-div {
@@ -49,6 +75,7 @@ ul {
   flex-direction: column;
   align-items: center;
   margin: auto;
+  margin-top: 150px;
 }
 
 #bookForm {
@@ -69,10 +96,49 @@ input {
   margin-left: auto;
 }
 
+footer {
+  width: 80%;
+  padding: 1rem 1rem;
+  border: solid 2px black;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  background: white;
+}
+
+.contact {
+  margin-top: 150px;
+}
+
 @media only screen and (min-width: 768px) {
   #bookForm {
     display: flex;
     flex-direction: column;
     width: 55%;
+  }
+
+  .nav-container {
+    padding: 0;
+  }
+
+  .navbar {
+    width: 80%;
+    padding: 1rem 1rem;
+    border: solid 2px black;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .bordered {
+    border-right: solid 2px black;
+  }
+
+  .contact-list {
+    line-height: 0.5rem;
   }
 }
