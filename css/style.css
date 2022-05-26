@@ -23,7 +23,7 @@ ul {
   border: none;
 }
 
-.fixed-nav{
+.fixed-nav {
   position: fixed;
   top: 0;
   background: white;
@@ -55,7 +55,7 @@ ul {
   padding: 1rem;
 }
 
-#books-list{
+#books-list {
   margin-top: 150px;
 }
 
@@ -100,18 +100,16 @@ footer {
   width: 80%;
   padding: 1rem 1rem;
   border: solid 2px black;
-
 }
 
-.fixed-footer{
+.fixed-footer {
   position: fixed;
   bottom: 0;
   left: 10%;
   background: white;
-
 }
 
-.contact{
+.contact {
   margin-top: 150px;
 }
 
