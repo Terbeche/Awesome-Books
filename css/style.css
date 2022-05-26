@@ -23,6 +23,12 @@ ul {
   border: none;
 }
 
+.fixed-nav{
+  position: fixed;
+  top: 0;
+  background: white;
+}
+
 #time-container {
   width: 80%;
   border: none;
@@ -49,6 +55,10 @@ ul {
   padding: 1rem;
 }
 
+#books-list{
+  margin-top: 150px;
+}
+
 .book-div {
   display: flex;
   justify-content: space-between;
@@ -65,6 +75,7 @@ ul {
   flex-direction: column;
   align-items: center;
   margin: auto;
+  margin-top: 150px;
 }
 
 #bookForm {
@@ -89,6 +100,19 @@ footer {
   width: 80%;
   padding: 1rem 1rem;
   border: solid 2px black;
+
+}
+
+.fixed-footer{
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  background: white;
+
+}
+
+.contact{
+  margin-top: 150px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <div class="nav-container container-fluid mb-1">
+    <div class="nav-container fixed-nav container-fluid mb-1">
       <nav class=" navbar navbar-expand-md navbar-light col-lg-10 mx-auto m-2 ">
         <a href="./index.html" class="navbar-brand">Awesome Books</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
   <main>
 
     <div id="books-list">
-      <div class="mt-5" id="headline">
+      <div id="headline">
         <h1>All Awesome Books</h1>
       </div>
       <!-- displayed books -->
@@ -58,7 +58,7 @@
 
 
     <!-- input fields -->
-    <div id="input-fields">
+    <div id="input-fields" class="d-none">
       <h2 class="input-header mt-5">Add New Book</h2>
       <form id="bookForm">
         <input type="text" placeholder="Book title" name="title" required />
@@ -68,7 +68,7 @@
     </div>
 
 
-    <div class="contact container mt-5">
+    <div class="contact container d-none">
       <h2>Contact information</h2>
       <p class="text-start w-75 mx-auto">Do you have any question or you just want to say "Hello" ? <br>You can reach out to us!</p>
 
@@ -81,7 +81,7 @@
 
 
   </main>
-  <footer class="text-start mx-auto mt-5 mb-3">
+  <footer class="text-start mx-auto mt-5 fixed-footer">
     <div class="">
       <p class="m-0">Copyright</p>
     </div>
