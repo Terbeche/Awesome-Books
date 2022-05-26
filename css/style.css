@@ -17,27 +17,27 @@ ul {
   padding-left: 0;
 }
 
-.navbar{
-width: 80%;
-padding: 1rem 1rem;
-border: none;
+.navbar {
+  width: 80%;
+  padding: 1rem 1rem;
+  border: none;
 }
 
-#time-container{
+#time-container {
   width: 80%;
   border: none;
   margin: auto;
 }
-#time {
-text-align: right;
 
+#time {
+  text-align: right;
 }
 
-.bordered{
+.bordered {
   border-right: none;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 16px;
 }
 
@@ -85,14 +85,10 @@ input {
   margin-left: auto;
 }
 
-footer{
+footer {
   width: 80%;
   padding: 1rem 1rem;
   border: solid 2px black;
-}
-
-.contact-list {
-  line-height: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -102,21 +98,25 @@ footer{
     width: 55%;
   }
 
-  .nav-container{
+  .nav-container {
     padding: 0;
   }
 
-  .navbar{
+  .navbar {
     width: 80%;
     padding: 1rem 1rem;
     border: solid 2px black;
-    }
+  }
 
-   .navbar-brand{
-      font-size: 24px;
-    }
+  .navbar-brand {
+    font-size: 24px;
+  }
 
-  .bordered{
+  .bordered {
     border-right: solid 2px black;
+  }
+
+  .contact-list {
+    line-height: 0.5rem;
   }
 }
